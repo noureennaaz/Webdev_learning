@@ -1,0 +1,7 @@
+#fix{
+    /* position: fixed; */
+    background-color: bisque;
+}
+#stick{
+    position: sticky;
+}

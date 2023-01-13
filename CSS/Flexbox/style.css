@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    height:500px;
+    border: 1px solid blueviolet;
+    /* displays horizontally  */
+    flex-direction: row;
+    /* Displays Vertically */
+       /* flex-direction: column;  */
+    /* Supports 3 values 
+      --nowrap-default 
+      --wrap
+      --wrap-reverse
+
+    */
+     flex-wrap: wrap-reverse;
+    
+}
+.block{
+    border: 1px solid orchid;
+    height: 300px;
+    width: 100px;
+}
+
+.container2{
+    display:flex;
+    border:1px solid red;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+}
