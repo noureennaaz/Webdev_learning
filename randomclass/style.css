@@ -1,0 +1,28 @@
+.container{
+
+    display: grid;
+    /* grid-template-rows: 30px ; */
+    grid-template-columns: 200px 300px ;
+    grid-template-rows: 30px 50px 30px;
+    grid-template-areas:
+    "hd hd"
+    "side main"
+    "ft ft";
+    text-align: center;
+}
+.box{
+    border:1px solid saddlebrown;
+    background-color: bisque;
+}
+#header{
+    grid-area: hd;
+}
+#sidebar{
+    grid-area: side;
+}
+#content{
+    grid-area:main
+}
+#footer{
+    grid-area:ft;
+}

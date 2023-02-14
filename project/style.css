@@ -1,0 +1,27 @@
+.wrapper{
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    display: flex;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+.navlogo{
+    display: flex;
+}
+.navtext{
+    display: flex;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navlink div:hover{
+    font-weight: bold;
+}
