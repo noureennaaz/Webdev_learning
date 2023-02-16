@@ -1,0 +1,42 @@
+body{
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: aliceblue;
+    font-size: 30px;
+}
+.block{
+    position: relative;
+    background-image: url("old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
+    height: 100vh;
+    
+}
+.text{
+    position: absolute;
+}
+#left-up{
+    
+    left:5px;
+    top:5px;
+}
+#right-up
+{
+    
+    right: 5px;
+    top:5px;
+}
+#middle{
+    
+    top:45%;
+    right:45%;
+}
+#right-bottom{
+    
+    bottom:5px;
+    right:5px;
+}
+#left-down{
+    
+    bottom:5px;
+    left:5px;
+}
