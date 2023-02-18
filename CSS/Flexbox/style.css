@@ -1,9 +1,10 @@
 .container{
     display: flex;
-    height:500px;
+    height:100px;
     border: 1px solid blueviolet;
     /* displays horizontally  */
     flex-direction: row;
+    width: 50vw;
     /* Displays Vertically */
        /* flex-direction: column;  */
     /* Supports 3 values 
@@ -16,7 +17,7 @@
 }
 .block{
     border: 1px solid orchid;
-    height: 300px;
+    height: 100px;
     width: 100px;
 }
 
@@ -25,4 +26,31 @@
     border:1px solid red;
     flex-direction: row-reverse;
     flex-wrap:wrap;
+    width: 50vw;
+}
+.container3{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width:50vw;
+    border: 2px solid palevioletred;
+    
+}
+.b2{
+    border: 5px dotted purple;
+    flex-basis: 50px;
+}
+.container4{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width:50vw;
+    border: 2px solid palevioletred;
+}
+.container5{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width:50vw;
+    border: 2px solid palevioletred;
 }
