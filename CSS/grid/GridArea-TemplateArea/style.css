@@ -1,0 +1,21 @@
+.container{
+    border: 5px solid grey;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 400px;
+    gap:5px;
+    padding: 5px;
+    
+}
+.box{
+    border-width: 6px;
+    border-style: dotted solid  double dashed ;
+    padding: -30px;
+    background-color: #ffcc33;
+    
+}
+#box1{
+    grid-area:1/1/2/3;
+    border-top: 4px solid teal;
+}

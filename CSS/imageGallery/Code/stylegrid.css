@@ -1,0 +1,79 @@
+/* making same layout using the grid  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:100%;
+    width:100vw;
+   display: flex;
+   justify-content: center;
+}
+.container{
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery{
+    
+    display: grid;
+    width:70vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+ 
+}
+
+.card{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    
+}
+figure{
+    position: relative;
+    filter: grayscale(100);
+    box-shadow: 0 0 20 black;
+    
+}
+figure:hover
+{
+    filter: grayscale(0);
+    scale: 1.03;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 20px , rgb(56, 42, 42));
+}
+figure:hover figcaption
+{
+    scale: 1.08;
+    filter: opacity(1);
+
+}
+figcaption{
+    position: absolute;
+    bottom:8px;
+    left:5px;
+    color: antiquewhite;
+    filter: opacity(0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.116), rgba(48, 48, 48, 0.212) tr);
+
+}
+.container h1
+{
+    text-align: center;
+    padding: 40px;
+    font-size: 60px;
+}
+
