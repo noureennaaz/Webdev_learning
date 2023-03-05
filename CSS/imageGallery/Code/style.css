@@ -43,6 +43,7 @@
        border-radius: 10px;
        overflow: hidden;
 }
+
 .card img{
     object-fit: cover;
     height: 100%;
@@ -50,9 +51,11 @@
     filter: grayscale(100%);
     box-shadow: 0 0 20px black;
 }
+
 figure{
     position: relative;
 }
+
 figure:hover{
     scale: 1.03;
     filter: drop-shadow(0 0 10px #333 );
@@ -65,15 +68,17 @@ figcaption{
     left:15px;
     opacity: 0;
 }
+
 figure:hover figcaption{
     opacity: 1;
     scale: 1.03;
-    transition: 0.2s;
-    
+    transition: 0.2s;   
 } 
+
 figure:hover img{
     filter: grayscale(0);
 } 
+
 figcaption{
     background-image: linear-gradient( rgba(39, 36, 36, 0.14) , rgba(163, 149, 149, 0.18));
     text-shadow: 1px;
