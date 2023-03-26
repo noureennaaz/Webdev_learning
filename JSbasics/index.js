@@ -96,11 +96,47 @@
 // plane.printingfx();
 
 
-//Calling  previously constructor
+//Calling  previous constructor
 
 //This works in console 
 // plane.constructor();
 
 
+//Creating strings
+
+// let priStr='String1';
+
+//Object string 
+//let objStr=String('String2');
+
+
+
+
+//converting the primitive string to object string\
+
+// let fName='myname'; 
+// fName.length ;
+
+
+// console.log(fName.includes('ynam'));
+
+//Separating the words present in a sentence
+
+// let str='this is a string';
+
+// let words=str.split(' ');
+// console.log(words);
+
+
+//sorting an array custom function
+
+let nums=[1 , 9 , 8  , 6, 5];
+
+let sum=0;
+for(values of nums)
+    sum+=values;
+
+
+console.log(sum);
 
 
