@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Model App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+
+        <div class="container">
+
+            <img src="portrait..jpg" alt="">
+
+            <h1>Noureen Naaz</h1>
+
+            <div class="heading2"> A Student</div>
+
+            <div class="buttonContainer">
+
+                <div class="button" onclick="clicked()">
+                    <i class="fa-share fa-solid"></i> 
+                    <div >My profile</div>
+                </div>
+                <div class="button">
+                    <div>Follow me</div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="modal">
+            <div class="modalhead">
+                <span>Share My Profile</span>
+                <i class="fa-solid fa-xmark" onclick="closeMod()"></i> 
+            </div>
+            <hr>
+            <div class="modalbody">
+
+                <div class="mdtext">Share this via</div>
+                
+                <div class="mdicons">
+
+                    <a class="circle fb" href="http://www.facebook.com" ><i class="fa-brands fa-facebook-f "></i></a>
+                    <a class="circle ig" href="#" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a class="circle twit"  href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="circle wts"  href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="circle lkd"  href="#" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Adding the overlay -->
+    <div class="overlay"></div>
+
+    </div>
+
+
+    
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/4cd24ffc8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

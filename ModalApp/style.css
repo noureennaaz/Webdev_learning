@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-decoration: none;
+}
+.wrapper{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    position: absolute;
+}
+.container{
+    position: absolute;
+    border:.3px solid rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    height: 30rem;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-evenly;
+
+
+    /* Blurry  */
+    backdrop-filter: blur(15px);
+}
+.container img{
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    overflow: hidden;
+    
+}
+.heading2{
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 1.2rem;
+
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: rgba(255, 255, 255, 0.726);
+}
+.buttonContainer div{
+    display: inline;
+    
+}
+.button{
+    border: .4px solid aliceblue;
+    border-radius: 5px;
+    width:48%;
+    padding: 10px;
+    text-align: center;
+    font-size: smaller;
+    
+}
+.button:hover{
+    background-color: aliceblue;
+    color:  black;
+}
+
+
+#circle1{
+
+    background: linear-gradient(-25deg, rgb(216, 72, 105), rgb(244, 102, 65));
+    height:13rem;
+    width:13rem;
+    border-radius: 100%;
+    position: fixed;
+    top:20px;
+    left:30vw;
+    box-shadow: rgb(216, 72, 105) 0px 0px 50px;
+    animation: translateLR 12s infinite;
+    transition: ease-in-out;
+
+}
+@keyframes translateLR {
+    
+    50% {
+        left: 32vw; 
+        scale:1.13;
+    }
+}
+
+#circle2{
+
+    background: linear-gradient(-25deg, rgb(212, 156, 245), rgb(187, 100, 245));
+    height:15rem;
+    width:15rem;
+    border-radius: 100%;
+    position: fixed;
+    bottom:20px;
+    right:30vw;
+    box-shadow: rgb(216, 72, 105) 0px 0px 50px;
+    animation: translate2 15s ease-in-out;
+
+}
+
+@keyframes translate2 {
+    50%{
+        bottom:6%;
+        right: 32vw; 
+        scale:1.11;
+    }
+}
+
+.circle{
+    border-radius: 100%;
+    border:1.5px solid ;
+    height:3.9rem;
+    width:3.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.479);
+    backdrop-filter:blur(10px);
+    width:33rem;
+    border:2.2px solid rgba(255, 255, 255, 0.623);
+    border-radius: 13px;
+    padding: 20px 20px 20px 20px;
+    height:18rem;
+    z-index: 9;
+    scale:0;
+    transition: .6s ease-in-out;
+
+    /* in class list add another class scale that by 1 to make it visible*/
+}
+.overlay{
+    position: absolute;
+
+    /* This makes it hidden */
+    display:none;
+    background-color: rgba(75, 71, 71, 0.61);
+    height: 100vh;
+    width: 100vw;
+    z-index: 6;
+}
+.activeoverlay{
+    display:inline;
+}
+.active{
+    scale:1;
+}
+.modalhead{
+    font-size: 1.3rem;
+    padding: 0px 0px 10px;
+
+}
+.mdtext{
+    font-size: small;
+    padding:20px 10px 20px 10px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    /* Top right bottom left */
+}
+.modalhead{
+    font-size: 2.1rem;
+    font-weight: 900;
+    padding-left:5px;
+}
+.modalhead i{
+    float: right;
+    
+}
+.mdicons{
+    
+    display: flex;
+    justify-content: space-evenly;
+    font-weight:bold ;
+    font-size: 2rem;
+}
+
+a i{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    padding-left: 17px;
+    padding-top: 13px;
+    
+}
+
+.fb{
+
+    
+    color: #8181ff;
+    
+}
+.fb:hover{
+    background-color: #8181ff;
+    color: white;
+}
+.ig{
+    color: rgb(241, 64, 123);
+}
+.ig :hover{
+    background-color: rgb(241, 64, 123);
+    color: white;
+}
+.wts{
+    color: rgb(2, 121, 18);
+}
+.wts:hover{
+    background-color: rgb(2, 121, 18);
+    color:white;
+}
+.twit{
+    color: skyblue;
+}
+.twit:hover{
+    background-color: skyblue;
+    color:white ;
+}
+.lkd{
+    color:rgb(53, 53, 241)
+}
+.lkd :hover{
+    background-color:rgb(53, 53, 241);
+    color:white;
+}
